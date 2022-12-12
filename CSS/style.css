@@ -1,32 +1,79 @@
+:root {
+  --dark-grey: rgb(59,57,57);
+}
+
 * {
-    color:darkgrey;
-    box-sizing: border-box;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    line-height: 1.5;  
-    background-color: lightblue;
-  }
+  color: var(--dark-grey);
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
 
-  .row {
-    width: 100%;
-  }
+.navbar {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  font-weight: bolder;
+  font-size: 14pt;
+  padding: 15px;
+  text-align: right;
+  position: static;
+}
+
+.navbar a {
+  padding: 20px;
+}
+
+.navbar:hover {
+  cursor: pointer;
+}
+
+.jumbotron img {
+  width: 100vw;
+  max-height: 800px;
+  overflow: hidden;
+  position: absolute;
+  float: left;
+  top: 70px;
+  left: 0px;
+}
+
+h1 {
+  position: absolute;
+  float: left;
+  top: 15%;
+  left: 5%;
+  z-index: 5;
+  border: 2px solid var(--dark-grey);
+  color: rgb(56, 55, 55);
+  padding: 15px;
+  background-color: rgb(208, 209, 210, 0.7);
+}
+
+h2 {
+  position: absolute;
+  float: left;
+  top: 100%;
+  left: 80%;
+  z-index: 4;
+  border: 2px solid var(--dark-grey);
+  padding: 10px;
+  color: rgb(56, 55, 55);
+  background-color: rgb(208, 209, 210, 0.7);
+}
+
+.row {
+  width: 100vw;
+}
+
 .work-grid {
-    width: 90vw;
-    margin: 10px;
-  }
+  margin: 20px;
+}
 
-  h1 {
-    z-index: 3;
-  }
+.card {
+  width: 400px;
+}
 
-  h1 .p {
-    z-index: 2;
-  }
-
-  header img {
-    width: 100%;
-    height: 300px;
-  }
-
-  .card {
-    width:400px;
-  }
+.work-grid img {
+  max-width: 400px;
+}
