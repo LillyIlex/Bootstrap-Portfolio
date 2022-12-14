@@ -147,6 +147,15 @@ h2 {
   padding: 20px;
 }
 
+.contact-img {
+  width: 250px;
+  margin-left: 200px;
+  padding: 10px;
+}
+
+#contact-img {
+ filter: saturate(0.2);
+}
 footer {
   text-align: center;
   background-color: var(--dark-grey);
