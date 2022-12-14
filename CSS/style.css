@@ -128,7 +128,14 @@ h2 {
 }
 
 .card img {
-  max-width: 400px;
+  max-width: 26vw;
+  min-width:250px;
+  height: auto;
+  overflow: hidden;
+}
+
+#top-row {
+  max-width: 35vw;
   height: auto;
   overflow: hidden;
 }
@@ -148,8 +155,8 @@ h2 {
 }
 
 .contact-img {
-  width: 250px;
-  margin-left: 200px;
+  min-width: 100px;
+  max-width: 250px;
   padding: 10px;
 }
 
