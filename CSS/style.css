@@ -17,6 +17,7 @@
   font-weight: bolder;
   font-size: 14pt;
   background-color: var(--dark-grey);
+  z-index: 7;
 }
 
 .navbar:hover {
@@ -28,14 +29,15 @@
   max-height: 800px;
   overflow: hidden;
   position: absolute;
-  top: 8%;
+  top: 0px;
+
 }
 
 .jumbotron .profile-pic {
-  position: relative;
+  position: absolute;
   float: left;
-  top: 60px;
-  left: 5%;
+  top: 160px;
+  left: 70px;
   z-index: 6;
   width: 15%;
   height: auto;
@@ -46,7 +48,7 @@
 h1 {
   position: absolute;
   float: left;
-  top: 10%;
+  top: 70px;
   left: 5%;
   z-index: 5;
   border: 2px solid var(--dark-grey);
@@ -59,8 +61,8 @@ h1 {
 h2 {
   position: absolute;
   float: left;
-  top: 65%;
-  left: 5%;
+  top: 450px;
+  left: 70px;
   z-index: 4;
   border: 2px solid var(--dark-grey);
   padding: 10px;
@@ -71,7 +73,7 @@ h2 {
 .bio {
   position: absolute;
   float: left;
-  top: 75%;
+  top: 510px;
   left: 5%;
   z-index: 4;
   width: 50%;
@@ -88,6 +90,7 @@ h2 {
   font-size: 24pt;
   font-weight: bold;
 }
+
 .card-body {
   background-color: var(--light-grey);
 }
@@ -98,7 +101,6 @@ h2 {
   padding: 80px;
   overflow: hidden;
 }
-
 
 .card-title {
   font-weight: bolder;
