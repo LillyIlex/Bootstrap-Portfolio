@@ -25,21 +25,22 @@
 }
 
 .jumbotron .hero-img {
-  width: 100%;
+  width: 100vw;
   max-height: 800px;
   overflow: hidden;
   position: absolute;
-  top: 0px;
+  top: 5%;
 
 }
 
 .jumbotron .profile-pic {
   position: absolute;
   float: left;
-  top: 160px;
-  left: 70px;
+  top: 18%;
+  left: 5%;
   z-index: 6;
-  width: 15%;
+  width: 35vw;
+  max-width: 210px;
   height: auto;
   border: 2px solid var(--dark-grey);
   background-color: var(--opaque-grey);
@@ -48,24 +49,23 @@
 h1 {
   position: absolute;
   float: left;
-  top: 70px;
+  height: 10vh;
+  top: 8%;
   left: 5%;
   z-index: 5;
   border: 2px solid var(--dark-grey);
   color: var(--dark-grey);
   padding: 15px;
-  font-size: 30pt;
   background-color: var(--opaque-grey);
 }
 
 h2 {
   position: absolute;
   float: left;
-  top: 450px;
-  left: 70px;
+  top: 45%;
+  left: 35%;
   z-index: 4;
   border: 2px solid var(--dark-grey);
-  padding: 10px;
   color: var(--dark-grey);
   background-color: var(--opaque-grey);
 }
@@ -73,22 +73,32 @@ h2 {
 .bio {
   position: absolute;
   float: left;
-  top: 510px;
+  width: 90vw;
+  top: 55%;
   left: 5%;
   z-index: 4;
-  width: 50%;
   border: 2px solid var(--dark-grey);
-  padding: 10px;
-  font-size: 15pt;
   text-align: center;
   color: rgb(234, 230, 230);
   background-color: rgba(32, 32, 32, 0.8);
 }
 
+.hero-name { 
+  font-size: 2rem;
+}
 
-#work h3 {
-  font-size: 24pt;
-  font-weight: bold;
+.hero-sub, .bio {
+  font-size: 1.5rem; 
+  padding: 10px;
+}
+
+#work {
+  border: 2px solid var(--dark-grey);
+  background-color: var(--opaque-grey);
+  padding: 5px;
+  text-align: center;
+  margin: 15px;
+  margin-top: 150px;
 }
 
 .card-body {
@@ -98,10 +108,13 @@ h2 {
 .work-grid {
   width: 100vw;
   margin-top: 500px;
-  padding: 80px;
   overflow: hidden;
+  padding: 10px;
 }
 
+.card {
+  padding: 30px;
+}
 .card-title {
   font-weight: bolder;
   font-size: 15pt;
@@ -118,10 +131,10 @@ h2 {
   overflow: hidden;
 }
 
+
 .card img:hover {
   border-bottom:5px solid rgba(32, 32, 32, 0.8);
   border-right:5px solid rgba(32, 32, 32, 0.8);
-  transition: ;
 }
 
 .contact-links:hover {
