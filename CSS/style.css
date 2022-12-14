@@ -30,17 +30,17 @@
   overflow: hidden;
   position: absolute;
   top: 5%;
-
 }
 
 .jumbotron .profile-pic {
   position: absolute;
   float: left;
-  top: 18%;
+  top: 22%;
   left: 5%;
   z-index: 6;
   width: 35vw;
-  max-width: 210px;
+  max-width: 200px;
+  min-width: 160px;
   height: auto;
   border: 2px solid var(--dark-grey);
   background-color: var(--opaque-grey);
@@ -50,7 +50,7 @@ h1 {
   position: absolute;
   float: left;
   height: 10vh;
-  top: 8%;
+  top: 10%;
   left: 5%;
   z-index: 5;
   border: 2px solid var(--dark-grey);
@@ -62,8 +62,8 @@ h1 {
 h2 {
   position: absolute;
   float: left;
-  top: 45%;
-  left: 35%;
+  top: 55%;
+  left: 40%;
   z-index: 4;
   border: 2px solid var(--dark-grey);
   color: var(--dark-grey);
@@ -74,7 +74,7 @@ h2 {
   position: absolute;
   float: left;
   width: 90vw;
-  top: 55%;
+  top: 65vh;
   left: 5%;
   z-index: 4;
   border: 2px solid var(--dark-grey);
@@ -98,7 +98,9 @@ h2 {
   padding: 5px;
   text-align: center;
   margin: 15px;
-  margin-top: 150px;
+  margin-top: 200px;
+  display: block;
+  clear: left;
 }
 
 .card-body {
