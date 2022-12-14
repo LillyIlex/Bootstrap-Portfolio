@@ -14,38 +14,39 @@
 .navbar {
   display: inline-block;
   width: 100%;
-  height: auto;
   font-weight: bolder;
   font-size: 14pt;
-  padding: 15px;
-  text-align: right;
   background-color: var(--dark-grey);
-}
-
-.navbar a {
-  padding: 20px;
-  color: var(--light-grey);
 }
 
 .navbar:hover {
   cursor: pointer;
-  transform: scale(1.05);
 }
 
-.jumbotron img {
-  width: 100vw;
+.jumbotron .hero-img {
+  width: 100%;
   max-height: 800px;
   overflow: hidden;
   position: absolute;
+  top: 8%;
+}
+
+.jumbotron .profile-pic {
+  position: relative;
   float: left;
-  top: 70px;
-  left: 0px;
+  top: 60px;
+  left: 5%;
+  z-index: 6;
+  width: 15%;
+  height: auto;
+  border: 2px solid var(--dark-grey);
+  background-color: var(--opaque-grey);
 }
 
 h1 {
   position: absolute;
   float: left;
-  top: 15%;
+  top: 10%;
   left: 5%;
   z-index: 5;
   border: 2px solid var(--dark-grey);
@@ -58,7 +59,7 @@ h1 {
 h2 {
   position: absolute;
   float: left;
-  top: 80%;
+  top: 65%;
   left: 5%;
   z-index: 4;
   border: 2px solid var(--dark-grey);
@@ -70,10 +71,10 @@ h2 {
 .bio {
   position: absolute;
   float: left;
-  top: 90%;
+  top: 75%;
   left: 5%;
   z-index: 4;
-  width: 45vw;
+  width: 50%;
   border: 2px solid var(--dark-grey);
   padding: 10px;
   font-size: 15pt;
@@ -82,46 +83,60 @@ h2 {
   background-color: rgba(32, 32, 32, 0.8);
 }
 
-.row {
-  width: 100vw;
+
+#work h3 {
+  font-size: 24pt;
+  font-weight: bold;
+}
+.card-body {
+  background-color: var(--light-grey);
 }
 
 .work-grid {
-  display: flex;;
-  margin: 20px;
+  width: 100vw;
+  margin-top: 500px;
+  padding: 80px;
+  overflow: hidden;
 }
 
-.card {
-  width: 40vw;
-  height: auto;
-}
 
 .card-title {
-  font-weight: bold;
+  font-weight: bolder;
   font-size: 15pt;
+  text-align: center;
 }
 
 .card-text {
   text-align: center;
 }
 
-.card>img {
+.card img {
   max-width: 400px;
+  height: auto;
+  overflow: hidden;
 }
 
-.contact a{
-  display: inline;
-  padding: 20px;
-  text-align: center;
-  font-weight: bolder;
-
+.card img:hover {
+  border-bottom:5px solid rgba(32, 32, 32, 0.8);
+  border-right:5px solid rgba(32, 32, 32, 0.8);
+  transition: ;
 }
+
 .contact-links:hover {
   cursor: pointer;
 }
 
-.btn-primary {
-  background-color: blue;
-  border: 2px solid darkblue;
-  border-radius: 5%;
+.about-contact {
+  padding: 20px;
+}
+
+footer {
+  text-align: center;
+  background-color: var(--dark-grey);
+  font-size: 15pt;
+  padding: 10px;
+}
+
+footer h3 {
+    color: var(--light-grey);
 }

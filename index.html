@@ -5,22 +5,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="CSS/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <title>Elizabeth Corris Bootstrap Portfolio </title>
 </head>
 
 <body>
   <header>
-    <nav class="navbar">
-      <div id="navbarNav">
-        <a class="nav-link" href="#work-grid">Work </a>
-        <a class="nav-link" href="#skills">Skills</a>
-        <a class="nav-link" href="#about">About Me & Contact Info</a>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Menu:</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" href="#work">Work </a>
+          <a class="nav-link" href="#skills">Skills</a>
+          <a class="nav-link" href="#about">About Me & Contact Info</a>
+        </div>
       </div>
     </nav>
     <div class="jumbotron jumbotron-fluid">
-      <h1 class> Elizabeth Corris</h1>
-      <h2 class> Get to know me!</h2>
-      <p class="bio"> I am a newbie to all things code,
+      <h1 class="text-sm-left"> Elizabeth Corris</h1>
+      <h2 class="text-sm-left"> Get to know me!</h2>
+      <p class="bio" class="text-sm-left"> I am a newbie to all things code,
         and have taken the first step towards
         a new career by becoming a bootcamp
         student. I am a mother to two small
@@ -28,122 +38,150 @@
         I am hoping to embark on a new journey,
         and career.
       </p>
-      <img src="Images/wedding cover photo.jpg" alt="Wedding cover photo">
+      <img class="hero-img" src="Images/wedding cover photo.jpg" alt="Wedding cover photo">
+      <img class="profile-pic" src="Images/Profile pic.png" class="card-img-top" alt="Profile picture">
     </div>
   </header>
 
   <main>
     <section class="work-grid">
+      <h3 id="work"> Work </h3>
       <div class="container-fluid">
-        <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-12">
+        <div class="row align-items-center">
+          <div class="col-sm-12 col-md-6 col-lg-6">
             <div class="card">
-              <img src="Images/heriseon.png" alt="Heriseon Website"
-                href="https://lillyilex.github.io/Heriseon-refactor/">
+              <a href="https://lillyilex.github.io/Heriseon-refactor/"><img id="top-row" src="Images/heriseon.png"
+                  alt="Heriseon Website"></a>
               <div class="card-body">
                 <h5 class="card-title">Heriseon Website</h5>
-                <p class="card-text"> This is a website i refactored the code on.</p>
+                <p class="card-text"> This is a website I refactored the code on.</p>
               </div>
             </div>
           </div>
-        </div>
-
-        <div class="row">
           <div class="col-sm-12 col-md-6 col-lg-6">
             <div class="card">
-              <img src="Images/Pre-work.png" alt="Pre-Work Study Guide"
-                href="https://lillyilex.github.io/prework-study-guide/">
+              <a href="https://lillyilex.github.io/prework-study-guide/"><img id="top-row" src="Images/Pre-work.png"
+                  alt="Pre-Work Study Guide"></a>
               <div class="card-body">
                 <h5 class="card-title">Pre-Work Study Guide</h5>
                 <p class="card-text"> This is a website I created in the run up to starting the coding bootcamp.</p>
               </div>
             </div>
           </div>
-          <div class="col-sm-12 col-md-6 col-lg-6">
+        </div>
+
+        <div class="row align-items-center">
+          <div class="col-sm-12 col-md-4 col-lg-4">
             <div class="card">
-              <img src="Images/Portfolio.png" alt="My portfolio" href="https://lillyilex.github.io/CorrisPortfolio/">
+              <a href="https://google.com/"><img id="second-row" src="Images/Portfolio.png" alt="My Portfolio"></a>
               <div class="card-body">
                 <h5 class="card-title">My Portfolio</h5>
                 <p class="card-text"> This portfolio is the first website I have created from scratch.</p>
               </div>
             </div>
           </div>
-
-          <div class="row">
-            <div class="col-sm-12 col-md-6 col-lg-6">
-              <div class="card">
-                <img src="Images/04-app-desktop.png" alt="Placeholder" href="https://google.com/">
-                <div class="card-body">
-                  <h5 class="card-title">Pre-Work Study Guide</h5>
-                  <p class="card-text"> This is a placeholder for future websites I create.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-6">
-              <div class="card">
-                <img src="Images/02-portfolio-3.jpg" alt="Placeholder" href="https://google.com/">
-                <div class="card-body">
-                  <h5 class="card-title">My Portfolio</h5>
-                  <p class="card-text"> This is a placeholder for future websites I create.</p>
-                </div>
+          <div class="col-sm-12 col-md-4 col-lg-4">
+            <div class="card">
+              <a href="https://google.com/"><img id="second-row" src="Images/04-app-desktop.png"
+                  alt="Placeholder Image"></a>
+              <div class="card-body">
+                <h5 class="card-title">Pre-Work Study Guide</h5>
+                <p class="card-text"> This is a placeholder for future websites I create.</p>
               </div>
             </div>
           </div>
+          <div class="col-sm-12 col-md-3 col-lg-3">
+            <div class="card">
+              <a href="https://google.com/"><img id="second-row" src="Images/02-portfolio-3.jpg"
+                  alt="Placeholder Image"></a>
+              <div class="card-body">
+                <h5 class="card-title">Placeholder</h5>
+                <p class="card-text"> This is a placeholder for future websites I create.</p>
+              </div>
+            </div>
+          </div>
+        </div>
     </section>
 
     <section>
-
       <div class="skills">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Skills</h5>
-            <p class="card-text"> The skills I expect to learn from this bootcamp are:</p>
-            <ul>
-              <li>Creating a static website using HTML and CSS</li>
-              <li>Making an interactive website application using JavaScript</li>
-              <li>Understanding the UI & UX, and being able to apply that to my projects.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="about-contact">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="container-fluid">
+          <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12">
             <div class="card">
-              <img src="Images/Profile pic.png" class="card-img-top" alt="Profile picture">
               <div class="card-body">
-                <h5 class="card-title">All about me</h5>
-                <p class="card-text"> I have a small business supplying bakers with cake toppers.
-                  I started in 2020 just before COVID hit,
-                  and luckily lockdown allowed home bakers to make
-                  their hobby a small business too, which created lots
-                  of new clients for me to supply cake toppers to on
-                  a regular basis.</p>
-              </div>
-            </div>
-
-            <div class="col-sm-12 col-md-6 col-lg-6">
-              <div class="contact">
-                <div class="card-body">
-                  <h5 class="card-title">Contact Me </h5>
-                  <div class="contact-links">
-                    <a class="link" class="btn btn-primary" href="https://www.instagram.com/getalilpersonal/"> Find me
-                      on
-                      Insta </a>
-                    <a class="link" class="btn btn-primary" href="mailto:getalilpersonal@outlook.com"> Email me </a>
-                    <a class="link" class="btn btn-primary" href="https://github.com/LillyIlex">Check out my Github</a>
+                <h5 class="card-title" id="skills">Skills</h5>
+                <p class="card-text"> The skills I expect to learn from this bootcamp are:</p>
+                <div class="container-fluid">
+                  <div class="col-sm-6 col-md-6 col-lg-6">
+                    <div class="card">
+                      <ul>
+                        <li>Creating a static website using HTML and CSS</li>
+                        <li>Making an interactive website application using JavaScript</li>
+                        <li>Understanding the UI & UX, and being able to apply that to my projects.</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-6 col-lg-6">
+                    <div class="card">
+                      <ul>
+                        <li> Using React</li>
+                        <li> Learn about APIs</li>
+                        <li> Using Node</li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
+            </div>
+           </div>
+          </div>
+        </div>
+    </section>
+
+    <section class="about-contact">
+      <div class="row align-items-center">
+        <div class="col-sm-12 col-md-6 col-lg-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title" id="about">More about me</h5>
+              <p class="card-text"> I have a small business supplying bakers with cake toppers.
+                I started in 2020 just before COVID hit,
+                and luckily lockdown allowed home bakers to make
+                their hobby a small business too, which created lots
+                of new clients for me to supply cake toppers to on
+                a regular basis.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-6">
+          <div class="card" class="contact">
+            <div class="card-body">
+              <h5 class="card-title"> Contact Me </h5>
+              <div class="contact-links">
+                <a class="link" class="btn btn-primary" href="https://www.instagram.com/getalilpersonal/"> Find me
+                  on Insta </a> <br>
+                <a class="link" class="btn btn-primary" href="mailto:getalilpersonal@outlook.com"> Email me </a> <br>
+                <a class="link" class="btn btn-primary" href="https://github.com/LillyIlex">Check out my Github</a>
+                <br>
+              </div>
+            </div>
+          </div>
+        </div>
     </section>
   </main>
-</body>
 
-<footer>
-  <h3> Thanks for visiting!</h3>
-</footer>
+  <footer>
+    <h3> Thanks for visiting!</h3>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+</body>
 
 </html>
